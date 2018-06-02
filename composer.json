@@ -1,0 +1,22 @@
+{
+    "name": "pvlima/img-manager",
+    "description": "Plugin para gerenciamento e upload de imagens",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["imagem","img","upload de imagem","img manager", "img upload"],
+    "authors": [
+        {
+            "name": "Paulo Vitor",
+            "email": "pv.lima02@gmail.com",
+            "homepage": "http://www.pvlima.com.br/"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pvlima\\ImgManager\\": "src"
+        }
+    }
+}
