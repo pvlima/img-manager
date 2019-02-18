@@ -75,8 +75,8 @@ class ImgManager
      */
     function __construct(string $data)
     {
-        $data = str_replace('data:image/png;base64,', '', $data);
-        $data = str_replace(' ', '+', $data);
+        list($type, $data) = explode(';', $data);
+        list(, $data)      = explode(',', $data);
         $this->decodeImg($data);
     }
 
